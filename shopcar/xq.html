@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>商品详情页</title>
+    <meta name="keywords" content="首页" />
+    <meta name="description" content="首页" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/fangdajing.css">
+    <script type="text/javascript" src="./js/jq.js"></script>
+
+    <link rel="stylesheet" href="./css/goods.css">
+    <link href="./plugs/big/css/css.css" type="text/css" rel="stylesheet">
+    <script src="./plugs/big/js/jquery-1.2.6.pack.js" type=text/javascript> </script> <script
+        src="./plugs/big/js/base.js" type=text/javascript> </script> </head> <body>
+    <p><a href="./index.html">返回首页</a></p>
+    <div class="showall">
+        <!-- <div class="box">
+            <div class="img">
+                <img src="./img/3-1.jpg" alt="" />
+                <div class="mask"></div>
+            </div>
+            <ul>
+                <li class="active">
+                    <img src="./img/2-1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/3-1.jpg" alt="">
+                </li>
+            </ul>
+            <div class="enlarge"></div>
+        </div>
+
+        <div class="tb-property">
+            <div class="tr-nobdr">
+                <h3> 凌度行车记录仪尊享版</h3>
+            </div>
+            <div class="txt">
+                <span class="nowprice">￥<a href="">599.00</a></span>
+
+            </div>
+            <div class="nobdr-btns">
+                <button class="addcart hu">加入购物车</button>
+                <button class="addcart yh">立即购买</button>
+            </div>
+
+        </div> -->
+    </div>
+    <script src="./js/fdj.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+        //获取到的数据是字符串要转换成对象才能用
+        var goodsId = localStorage.getItem('goodsId');
+        var userId = localStorage.getItem('userId');
+        //商品详情页 显示数据库所有信息
+        $.ajax({
+            type: 'get',
+            url: 'http://127.0.0.1:5005',
+            data: { goodsId }, //需要传递参数
+            dataType: 'json',
+            success: function (res) {
+
+                img = res.data.goods_img.replace(".jpg", `-2.jpg`)
+
+
+                var html = ''
+                // console.log(res)  res.data
+
+                // item就是数组中一个个对象
+                // 一个个对象 对应 一条条 数据  
+                html += `
+        <div id=preview style="margin: 0;width: 0">
+					<div class=jqzoom id=spec-n1 ><IMG height=350
+					src="${res.data.goods_img}" jqimg="${res.data.goods_img}" width=350>
+					</div>
+    
+
+                    <div class="tb-property">
+            <div class="tr-nobdr">
+                <h3>${res.data.goods_title}</h3>
+            </div>
+            <div class="txt">
+                <span class="nowprice">￥<a href="">${res.data.goods_small_price}</a></span>    
+            </div>
+            <div class="nobdr-btns">
+                <button class="addcart hu">加入购物车</button>
+                <button class="addcart yh">立即购买</button>
+            </div>
+
+        </div>
+
+
+
+
+           
+				`
+
+                // 在页面显示
+                $('.showall').html(html);
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+
+        $('.showall').on("click", ".hu", function () {
+            var goodsId = localStorage.getItem('goodsId');
+            var userId = localStorage.getItem('userId');
+            $.ajax({
+                type: 'get',
+                url: 'http://127.0.0.1:7000',
+                data: { userId, goodsId, addCartNum: 1 }, //需要传递参数
+                dataType: 'json',
+                success: function (res) {
+                    if (res.meta.status == 200 || res.meta.status == 201) {
+                        location.href = "./cart.html"
+                    }
+
+                },
+                error: function (err) {
+                    if (confirm("请先登录")) {
+                        location.href = "./login.html"
+                    }
+                }
+            })
+        })
+
+
+        $(function () {
+            $(".jqzoom").jqueryzoom({
+                xzoom: 400,
+                yzoom: 400,
+                offset: 10,
+                position: "right",
+                preload: 1,
+                lens: 1
+            });
+            $("#spec-list").jdMarquee({
+                deriction: "left",
+                width: 350,
+                height: 56,
+                step: 2,
+                speed: 4,
+                delay: 10,
+                control: true,
+                _front: "#spec-right",
+                _back: "#spec-left"
+            });
+            $("#spec-list img").bind("mouseover", function () {
+                var src = $(this).attr("src");
+                $("#spec-n1 img").eq(0).attr({
+                    src: src.replace("\/n5\/", "\/n1\/"),
+                    jqimg: src.replace("\/n5\/", "\/n0\/")
+                });
+                $(this).css({
+                    "border": "2px solid #ff6600",
+                    "padding": "1px"
+                });
+            }).bind("mouseout", function () {
+                $(this).css({
+                    "border": "1px solid #ccc",
+                    "padding": "2px"
+                });
+            });
+        })
+
+    </script>
+
+
+    <!-- <script src="./api/price.js"></script> -->
+
+    <SCRIPT src="./plugs/big/js/lib.js" type=text/javascript> </SCRIPT> <SCRIPT src="./plugs/big/js/zzsc.js"
+        type=text/javascript> </SCRIPT> </body> </html>

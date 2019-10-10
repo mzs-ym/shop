@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<title>购物车</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Furnilife - Furniture eCommerce Bootstrap4 Template</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="icon" href="assets/images/favicon.ico">
+
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- FontAwesome CSS -->
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Ionicons CSS -->
+	<link href="./css/ionicons.min.css" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link href="./css/plugins.css" rel="stylesheet">
+
+	<!-- Helper CSS -->
+	<link href="./css/helper.css" rel="stylesheet">
+
+	<!-- Main CSS -->
+	<link href="./css/main.css" rel="stylesheet">
+
+	
+</head>
+<div class="header-container header-sticky">
+
+	<!--=============================================
+	=            header top         =
+	=============================================-->
+	
+	<div class="header-top pt-15 pb-15">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="header-top-text text-center text-lg-left mb-0 mb-md-15 mb-sm-15">
+							<p><Ordered before 17:30, shipped today - <span class="support-no">Support: (012) 800 456 789</span></p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<!--=======  header top dropdowns  =======-->
+						
+					<div class="header-top-dropdown d-flex justify-content-center justify-content-lg-end">
+							
+
+						<!--=======  single dropdown  =======-->
+						
+						<div class="single-dropdown">
+							
+							<span class="d-none d-sm-inline-block">Language:</span> <a href="#" id="changeLanguage"><span id="languageName">English </span></a>
+							<div class="language-currency-list hidden" id="languageList">
+								<ul>
+									<li><a href="#">English</a></li>
+									<li><a href="#">Français</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<span class="separator pl-15 pr-15">|</span>
+						
+						<!--=======  End of single dropdown  =======-->
+
+						<!--=======  single dropdown  =======-->
+						
+						
+						<div class="single-dropdown">
+						<span class="d-none d-sm-inline-block">Currency:</span>  <a href="#" id="changeCurrency"><span id="currencyName">USD $</span></a>
+							<div class="language-currency-list hidden" id="currencyList">
+								<ul>
+									<li><a href="#">USD $</a></li>
+									<li><a href="#">EURO €</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<span class="separator pl-15 pr-15">|</span>
+						
+						<!--=======  End of single dropdown  =======-->
+						
+
+						<!--=======  single dropdown  =======-->
+						
+						
+						<div class="single-dropdown">
+							<a href="#" id="changeAccount"><span id="accountMenuName">登录</span>&nbsp;&nbsp;&nbsp;&nbsp; <span id="exit">退出</span></a>
+							<div class="language-currency-list hidden" id="accountList">
+								<ul>
+									<li><a href="cart.html">Cart</a></li>
+									<li><a href="checkout.html">Checkout</a></li>
+									<li><a href="my-account.html"></a></li>
+									<li><a href="login-register.html">Login</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navigation-menu-top pt-35 pb-35 pt-md-15 pb-md-15 pt-sm-15 pb-sm-15">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-6 col-lg-2 col-md-6 col-sm-6 order-1 order-lg-1">
+					<!--=======  logo  =======-->
+
+					<div class="logo">
+						<a href="index.html">
+							<img src="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images/logo.png" class="img-fluid" alt="">
+						</a>
+					</div>
+
+					<!--=======  End of logo  =======-->
+				</div>
+				<div class="col-12 col-lg-8 col-md-12 col-sm-12 order-3 order-lg-2">
+					<!--=======  header feature container  =======-->
+
+					<div class="header-feature-container mt-md-15 mt-sm-15">
+						<!--=======  single feature  =======-->
+
+						<div class="single-feature d-flex">
+							<div class="image">
+								<i class="icon ion-md-globe"></i>
+							</div>
+							<div class="content">
+								<h5>FREE SHIPPING</h5>
+								<p>Free shipping on all order</p>
+							</div>
+						</div>
+
+						<!--=======  End of single feature  =======-->
+						<!--=======  single feature  =======-->
+
+						<div class="single-feature d-flex">
+							<div class="image">
+								<i class="icon ion-md-checkmark-circle-outline"></i>
+							</div>
+							<div class="content">
+								<h5>MONEY RETURN</h5>
+								<p>Back guarantee under 7 days</p>
+							</div>
+						</div>
+
+						<!--=======  End of single feature  =======-->
+						<!--=======  single feature  =======-->
+
+						<div class="single-feature d-flex mb-sm-0">
+							<div class="image">
+								<i class="icon ion-md-notifications-outline"></i>
+							</div>
+							<div class="content">
+								<h5>MEMBER DISCOUNT</h5>
+								<p>On every order over $120.00</p>
+							</div>
+						</div>
+
+						<!--=======  End of single feature  =======-->
+
+
+					</div>
+
+					<!--=======  End of header feature container  =======-->
+
+
+				</div>
+				<div class=" col-6 col-lg-2 col-md-6 col-sm-6 order-2 order-lg-3">
+					<!--=======  cart icon  =======-->
+
+					<div class="minicart-section">
+						<a href="#" id="cart-icon">
+							<span class="image"><i class="icon ion-md-cart"></i></span>
+							<h5>欢迎光临 <i class="fa fa-angle-down"></i></h5>
+							<p>欢迎光临</p>
+						</a>
+
+						<!-- cart floating box -->
+						<div class="cart-floating-box hidden" id="cart-floating-box">
+							<div class="cart-items">
+								<div class="cart-float-single-item d-flex">
+									<span class="remove-item" id="remove-item"><a href="#"><i
+												class="icon ion-md-close"></i></a></span>
+									<div class="cart-float-single-item-image">
+										<a href="single-product.html"><img src="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+									</div>
+									<div class="cart-float-single-item-desc">
+										<p class="product-title"> <a href="single-product.html">Duis pulvinar
+												obortis eleifend </a></p>
+										<p class="quantity"> Qty: 1</p>
+										<p class="price">$20.50</p>
+									</div>
+								</div>
+								<div class="cart-float-single-item d-flex">
+									<span class="remove-item"><a href="#"><i
+												class="icon ion-md-close"></i></a></span>
+									<div class="cart-float-single-item-image">
+										<a href="single-product.html"><img src="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images/products/product02.jpg" class="img-fluid" alt=""></a>
+									</div>
+									<div class="cart-float-single-item-desc">
+										<p class="product-title"> <a href="single-product.html">Fusce ultricies
+												dolor vitae</a></p>
+										<p class="quantity"> Qty: 1</p>
+										<p class="price">$20.50</p>
+									</div>
+								</div>
+							</div>
+							<div class="cart-calculation">
+								<div class="calculation-details">
+									<p class="total">Subtotal <span>$22</span></p>
+								</div>
+								<div class="floating-cart-btn text-center">
+									<a class="fl-btn pull-left" href="cart.html">View Cart</a>
+									<a class="fl-btn pull-right" href="checkout.html">Checkout</a>
+								</div>
+							</div>
+						</div>
+						<!-- end of cart floating box -->
+					</div>
+
+					<!--=======  End of cart icon  =======-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+<body>
+
+
+
+	
+	
+	
+
+
+    <div class="page-section mb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#">				
+                        <!--=======  cart table  =======-->
+                        
+                        <div class="cart-table table-responsive mb-40">
+                            <table class="table">
+                                <thead>
+
+
+
+
+
+                                    <tr>
+										<th><input class="qx" type="checkbox">全选</th>
+                                        <th class="pro-thumbnail">Image</th>
+                                        <th class="pro-title">Product</th>
+                                        <th class="pro-price">Price</th>
+                                        <th class="pro-quantity">Quantity</th>
+                                        <th class="pro-subtotal">Total</th>
+                                        <th class="pro-remove">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        
+                    </form>	
+                        
+                  
+                    
+                </div>
+            </div>
+		</div>
+
+    </div>
+	<div class="footer-navigation pt-40 pb-20 pb-lg-40 pt-sm-30 pb-sm-10">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<!--=======  address block  =======-->
+
+					<div class="address-block">
+						<div class="image">
+							<a href="index.html">
+								<img src="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images/logo.png" class="img-fluid" alt="">
+							</a>
+						</div>
+
+						<div class="address-text">
+							<ul>
+								<li>Address: 123 Main Street, Anytown, CA 12345 - USA.</li>
+								<li>Phone: (012) 800 456 789</li>
+								<li>Fax: (012) 800 456 789</li>
+								<li>Email: support@hastech.company</li>
+							</ul>
+						</div>
+
+						<div class="social-links">
+							<ul>
+								<li><a href="http://www.twitter.com/" class="twitter" data-tooltip="Twitter"><i
+											class="fa fa-twitter"></i></a></li>
+								<li><a href="http://www.facebook.com/" class="facebook" data-tooltip="Facebook"><i
+											class="fa fa-facebook"></i></a></li>
+								<li><a href="http://www.behance.com/" class="behance" data-tooltip="Behance"><i
+											class="fa fa-behance"></i></a></li>
+								<li><a href="http://www.pinterest.com/" class="pinterest" data-tooltip="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="http://www.rss.com/" class="rss" data-tooltip="RSS"><i
+											class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!--=======  End of address block  =======-->
+				</div>
+				<div class="col-lg-2 col-md-6">
+					<!--=======  widget block  =======-->
+
+					<div class="widget-block">
+						<h4 class="footer-widget-title mb-sm-10">INFORMATION</h4>
+						<ul>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="blog-left-sidebar.html">Blog</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Seller Login</a></li>
+							<li><a href="#l">Site Map</a></li>
+						</ul>
+					</div>
+
+					<!--=======  End of widget block  =======-->
+				</div>
+				<div class="col-lg-2 col-md-6">
+					<!--=======  widget block  =======-->
+
+					<div class="widget-block">
+						<h4 class="footer-widget-title mt-sm-20 mb-sm-10">MY ACCOUNT</h4>
+						<ul>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="my-account.html">My Account</a></li>
+							<li><a href="wishlist">Wishlist</a></li>
+							<li><a href="cart.html">Cart</a></li>
+						</ul>
+					</div>
+
+					<!--=======  End of widget block  =======-->
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<!--=======  widget block  =======-->
+
+					<div class="widget-block">
+						<h4 class="footer-widget-title mt-sm-20 mb-sm-10">JOIN OUR NEWSLETTER NOW</h4>
+						<p>Get E-mail updates about our latest shop and special offers.</p>
+
+						<!--=======  newsletter formq  =======-->
+
+						<div class="newsletter-form mb-20">
+							<form id="mc-form" class="mc-form">
+								<input type="email" placeholder="Enter your email" required>
+								<button class="zj" type="button" value="">结算</button>
+							</form>
+						</div>
+
+						<!-- mailchimp-alerts Start -->
+						<div class="mailchimp-alerts">
+							<div class="mailchimp-submitting"></div>
+							<!-- mailchimp-submitting end -->
+							<div class="mailchimp-success"></div>
+							<!-- mailchimp-success end -->
+							<div class="mailchimp-error"></div>
+							<!-- mailchimp-error end -->
+						</div>
+						<!-- mailchimp-alerts end -->
+
+						<!--=======  End of newsletter formq  =======-->
+					</div>
+					<!--=======  End of widget block  =======-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--=======  End of footer navigation  =======-->
+
+	<!--=======  footer copyright  =======-->
+
+	<div class="footer-copyright pt-20 pb-20">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6 text-center text-md-left mb-20 mb-md-0">
+					<!--=======  footer copyright text  =======-->
+
+					<div class="footer-copyright-text">
+						<p>Copyright &copy; 2018 <a href="http://www.17sucai.com/">Furnilife</a>, All Rights Reserved.
+						</p>
+					</div>
+
+					<!--=======  End of footer copyright text  =======-->
+				</div>
+				<div class="col-md-6 text-center text-md-right">
+					<!--=======  payment logo  =======-->
+
+					<div class="payment-logo">
+						<img src="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images/payment.png" class="img-fluid" alt="">
+					</div>
+
+					<!--=======  End of payment logo  =======-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--=======  End of footer copyright  =======-->
+</div>
+
+	
+	<div class="search-overlay" id="search-overlay">
+		<a href="#" class="search-overlay-close" id="search-overlay-close"><i class="fa fa-times"></i></a>
+		<div class="search-box">
+			<input type="search" placeholder="Search entire store here">
+			<button><i class="icon ion-md-search"></i></button>
+		</div>
+	</div>
+		
+	<!--=====  End of search overlay  ======-->
+
+	<!-- scroll to top  -->
+	<a href="#" class="scroll-top"></a>
+	<!-- end of scroll to top -->
+
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script>
+	$(function(){
+		//获取当前登录的账号id
+		var userId= localStorage.getItem("userId")
+		var name= localStorage.getItem("username")
+		var pwd= localStorage.getItem("password")
+   	//是否登录显示用户名
+    if(name){
+		//显示用户名
+		$("#accountMenuName").html(name)
+		//显示退出按键，点击后清除登陆状态
+		$("#exit").on("click",function(){
+			localStorage.clear()
+			location.href="./login.html"
+		})
+        $("#accountMenuName").on("click",function(){
+            location.href="./cart.html"
+        })
+    }else{
+		//未登录直接跳转
+		$("#accountMenuName").html("登录")
+		alert("请登录")
+		location.href="./login.html"
+		//未登录状态不显示退出按钮
+		$("#exit").remove()
+        $("#accountMenuName").on("click",function(){
+            location.href="./login.html"
+        })
+        
+    }
+     var html=""	
+		//购物车页面响应
+		$.ajax({
+			type:"get",
+			url:("http://127.0.0.1:3005/"),
+			data:{userId,pwd},
+			dataType:"json",
+			success:function(res){
+				if(res.meta.status==200){
+					$.each(res.data,function(index,item){
+						var total=item.goods_small_price*item.buy_num
+						
+						html+=`
+						<tr>
+										<td  ><input class="xz" type="checkbox"></td>
+                                        <td class="pro-thumbnail"><a href="javascript:;"><img src="${item.goods_img}"></a></td>
+                                        <td class="pro-title"><a href="javascript:;">${item.goods_title}</a></td>
+                                        <td class="pro-price"><span>$${item.goods_small_price}</span></td>
+                                        <td  class="pro-quantity"><div class="pro-qty"><input jj=${item.goods_id} class="num" type="text" value="${item.buy_num}">
+                                        <a href="#" jj=${item.goods_id} class="inc">+</a>
+                                        <a href="#" jj=${item.goods_id} class="dec">-</a>
+                                        </div></td> 
+                                        <td class="pro-subtotal"><span class="jg">$${total}</span></td>
+                                        <td  jj=${item.goods_id} class="pro-remove"><a href="#">删除</a></td>
+                                    </tr>
+						`
+					})
+					$('tbody').html(html);
+				}
+			}
+		})
+		//文本框修改购买数量
+		var t;
+		$('tbody').on("keyup",(".num"),function(){
+			var _this=this;
+			//只可以输入数字
+			var num=$(".num").val().replace(/\D/,"")
+			var _this=this;
+			var goodsId=$(this).attr("jj")
+			var userId = localStorage.getItem('userId');
+			 t=setTimeout(() => {
+				$.ajax({
+					type:"get",
+				url:("http://127.0.0.1:3006/"),
+				data:{goodsId,num,userId},
+				dataType:"json",
+				success:function(res){	
+					if(res.meta.status==200){
+				var total=$(_this).val()*$(_this).parents("td").prev().children(".pro-price span").html().replace("$","")
+					$(_this).parents("td").next().children("span").html(`$${total}`)
+					}else{
+						alert(res.meta.msg)
+						$(_this).val(res.data[0].goods_num)
+					}
+				}
+				})
+			}, 1000);
+		})
+		
+		//加
+		$('tbody').on("click",(".inc"),function(){
+			var _this=this;
+			var num=Number($(_this).siblings(".num").val())+1
+			var goodsId=$(this).attr("jj")
+			var userId = localStorage.getItem('userId');
+			$.ajax({
+				type:"get",
+			url:("http://127.0.0.1:3006/"),
+			data:{goodsId,num,userId},
+			dataType:"json",
+			success:function(res){
+				if(res.meta.status==200){
+				$(_this).siblings(".num").val(num)
+				var total=$(_this).siblings(".num").val()*$(_this).parents("td").prev().children(".pro-price span").html().replace("$","")
+					$(_this).parents("td").next().children("span").html(`$${total}`)
+				}else{
+					alert(res.meta.msg)
+					$(_this).siblings(".num").val(res.data[0].goods_num)
+				}
+			}
+			})
+		
+
+
+		})
+		//减
+		$('tbody').on("click",(".dec"),function(){
+			var _this=this
+			var num=Number($(_this).siblings(".num").val())-1
+			var goodsId=$(this).attr("jj")
+			var userId = localStorage.getItem('userId');
+			$.ajax({
+				type:"get",
+			url:("http://127.0.0.1:3006/"),
+			data:{goodsId,num,userId},
+			dataType:"json",
+			success:function(res){
+				if(res.meta.status==200){
+					$(_this).siblings(".num").val(num)
+					var total=$(_this).siblings(".num").val()*$(_this).parents("td").prev().children(".pro-price span").html().replace("$","")
+					$(_this).parents("td").next().children("span").html(`$${total}`)
+				}else{
+					alert(res.meta.msg)
+					$(_this).siblings(".num").val(res.data[0].goods_num)
+				}
+			}
+			})
+		
+		})
+		//删除
+		$('tbody').on("click",(".pro-remove"),function(){
+			var goodsId=$(this).attr("jj")
+			var userId = localStorage.getItem('userId');
+			//this指向问题，所以在此声明
+			var _this=this
+			if(confirm("确定删除此商品")){
+			$.ajax({
+				type:"get",
+			url:("http://127.0.0.1:3007/"),
+			data:{goodsId,userId},
+			dataType:"json",
+			success:function(res){
+				if(res.meta.status==200){
+					$(_this).parents("tr").remove()
+				}
+			}
+			})
+		}
+		})
+		//全选
+		$(".qx").on("click",function(){			
+				$(".xz").prop("checked",$(".qx").prop("checked"))
+		})
+		//总计
+		$(".zj").on("click",function(){
+			var zf=0;
+		$(".jg").each(function(index,item){
+			// console.log(item);
+			if($(item).parents("tr").find(".xz").prop("checked")){
+				zf=Number($(item).html().replace("$",""))+Number(zf)
+			zf=zf*$(item).parent().siblings(".pro-quantity").find(".num").val()			
+			}
+		})
+			 alert(`您共需支付${zf}元`)
+			 
+		})
+	})
+</script>
+</html>

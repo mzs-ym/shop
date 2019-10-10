@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表</title>
+    <link rel="icon" href="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images//favicon.ico">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+	<link href="./css/ionicons.min.css" rel="stylesheet">
+	<link href="./css/plugins.css" rel="stylesheet">
+	<link href="./css/helper.css" rel="stylesheet">
+	<link href="./css/main.css" rel="stylesheet">
+
+</head>
+<style>
+	.red{
+		color: red;
+	}
+.fy{
+	margin:  10px auto;
+	display: flex;
+	flex-direction: column;
+	}
+.fy div{
+	
+	margin: 10px 5px;
+	background-color: #fff;
+}
+</style>
+<body>
+
+	<!--=============================================
+	=            header container         =
+	=============================================-->
+	
+	<div class="header-container header-sticky">
+
+		<!--=============================================
+		=            header top         =
+		=============================================-->
+		
+		<div class="header-top pt-15 pb-15">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="header-top-text text-center text-lg-left mb-0 mb-md-15 mb-sm-15">
+								<p><Ordered before 17:30, shipped today - <span class="support-no">Support: (012) 800 456 789</span></p>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<!--=======  header top dropdowns  =======-->
+							
+						<div class="header-top-dropdown d-flex justify-content-center justify-content-lg-end">
+								
+	
+							<!--=======  single dropdown  =======-->
+							
+							<div class="single-dropdown">
+								
+								<span class="d-none d-sm-inline-block">Language:</span> <a href="#" id="changeLanguage"><span id="languageName">English </span></a>
+								<div class="language-currency-list hidden" id="languageList">
+									<ul>
+										<li><a href="#">English</a></li>
+										<li><a href="#">Français</a></li>
+									</ul>
+								</div>
+							</div>
+	
+							<span class="separator pl-15 pr-15">|</span>
+							
+							<!--=======  End of single dropdown  =======-->
+	
+							<!--=======  single dropdown  =======-->
+							
+							
+							<div class="single-dropdown">
+							<span class="d-none d-sm-inline-block">Currency:</span>  <a href="#" id="changeCurrency"><span id="currencyName">USD $</span></a>
+								<div class="language-currency-list hidden" id="currencyList">
+									<ul>
+										<li><a href="#">USD $</a></li>
+										<li><a href="#">EURO €</a></li>
+									</ul>
+								</div>
+							</div>
+	
+							<span class="separator pl-15 pr-15">|</span>
+							
+							<!--=======  End of single dropdown  =======-->
+							
+	
+							<!--=======  single dropdown  =======-->
+							
+							
+							<div class="single-dropdown">
+								<a href="#" id="changeAccount"><span id="accountMenuName">登录</span>   <span id="exit">退出</span></a>
+								<div class="language-currency-list hidden" id="accountList">
+									<ul>
+										<li><a href="cart.html">Cart</a></li>
+										<li><a href="checkout.html">Checkout</a></li>
+										<li><a href="my-account.html"></a></li>
+										<li><a href="login-register.html">Login</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navigation-menu-top pt-35 pb-35 pt-md-15 pb-md-15 pt-sm-15 pb-sm-15">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-lg-2 col-md-6 col-sm-6 order-1 order-lg-1">
+                        <!--=======  logo  =======-->
+
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images/logo.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+
+                        <!--=======  End of logo  =======-->
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-12 col-sm-12 order-3 order-lg-2">
+                        <!--=======  header feature container  =======-->
+
+                        <div class="header-feature-container mt-md-15 mt-sm-15">
+                            <!--=======  single feature  =======-->
+
+                            <div class="single-feature d-flex">
+                                <div class="image">
+                                    <i class="icon ion-md-globe"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>FREE SHIPPING</h5>
+                                    <p>Free shipping on all order</p>
+                                </div>
+                            </div>
+
+                            <!--=======  End of single feature  =======-->
+                            <!--=======  single feature  =======-->
+
+                            <div class="single-feature d-flex">
+                                <div class="image">
+                                    <i class="icon ion-md-checkmark-circle-outline"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>MONEY RETURN</h5>
+                                    <p>Back guarantee under 7 days</p>
+                                </div>
+                            </div>
+
+                            <!--=======  End of single feature  =======-->
+                            <!--=======  single feature  =======-->
+
+                            <div class="single-feature d-flex mb-sm-0">
+                                <div class="image">
+                                    <i class="icon ion-md-notifications-outline"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>MEMBER DISCOUNT</h5>
+                                    <p>On every order over $120.00</p>
+                                </div>
+                            </div>
+
+                            <!--=======  End of single feature  =======-->
+
+
+                        </div>
+
+                        <!--=======  End of header feature container  =======-->
+
+
+                    </div>
+                    <div class=" col-6 col-lg-2 col-md-6 col-sm-6 order-2 order-lg-3">
+                        <!--=======  cart icon  =======-->
+
+                        <div class="minicart-section">
+                            <a href="#" id="cart-icon">
+                                <span class="image"><i class="icon ion-md-cart"></i></span>
+                                <h5>欢迎光临 <i class="fa fa-angle-down"></i></h5>
+                                <p>欢迎光临</p>
+                            </a>
+
+                            <!-- cart floating box -->
+                            <div class="cart-floating-box hidden" id="cart-floating-box">
+                                <div class="cart-items">
+                                    <div class="cart-float-single-item d-flex">
+                                        <span class="remove-item" id="remove-item"><a href="#"><i
+													class="icon ion-md-close"></i></a></span>
+                                        <div class="cart-float-single-item-image">
+                                            <a href="single-product.html"><img src="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="cart-float-single-item-desc">
+                                            <p class="product-title"> <a href="single-product.html">Duis pulvinar
+													obortis eleifend </a></p>
+                                            <p class="quantity"> Qty: 1</p>
+                                            <p class="price">$20.50</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-float-single-item d-flex">
+                                        <span class="remove-item"><a href="#"><i
+													class="icon ion-md-close"></i></a></span>
+                                        <div class="cart-float-single-item-image">
+                                            <a href="single-product.html"><img src="https://www.17sucai.com/preview/1424582/2018-11-12/Furnilife/assets/images/products/product02.jpg" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="cart-float-single-item-desc">
+                                            <p class="product-title"> <a href="single-product.html">Fusce ultricies
+													dolor vitae</a></p>
+                                            <p class="quantity"> Qty: 1</p>
+                                            <p class="price">$20.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-calculation">
+                                    <div class="calculation-details">
+                                        <p class="total">Subtotal <span>$22</span></p>
+                                    </div>
+                                    <div class="floating-cart-btn text-center">
+                                        <a class="fl-btn pull-left" href="cart.html">View Cart</a>
+                                        <a class="fl-btn pull-right" href="checkout.html">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of cart floating box -->
+                        </div>
+
+                        <!--=======  End of cart icon  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+    
+    <div class="shop-page-content mb-50">
+        <div class="container">
+            <div class="row">
+              
+                <div class="col-lg-9 order-1 order-lg-2">
+                    
+                    <div class="slider-banner home-one-banner banner-bg banner-bg-1 mb-30">
+					
+					<div class="shop-header mb-30">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 d-flex align-items-center">       
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 d-flex flex-column flex-sm-row justify-content-between align-items-left align-items-sm-center">
+                                
+                                <div class="sort-by-dropdown d-flex align-items-center mb-xs-10">
+                                    <p class="mr-10 mb-0" style="color: white">search </p>
+                                    <input type="text" id="search">
+                                </div>
+                                
+                                <p class="result-show-message">Showing 1–12 of 41 results</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+                    <div class="shop-product-wrap grid row mb-30 no-gutters">
+
+
+					</div>
+					
+				  <!-- 分页 -->
+				  <div class="fy">
+					<!-- <ul>
+						<li><a href="#">prev</a></li>
+						<li><a class="active" href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">next</a></li>
+					</ul> -->
+				</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+  
+	
+		</div>
+	</div>
+	
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script>
+	$(function(){
+		//是否登录显示用户名
+		var name= localStorage.getItem("username")
+    if(name){
+		//显示用户名
+		$("#accountMenuName").html(name)
+		//显示退出按键，点击后清除登陆状态
+		$("#exit").on("click",function(){
+			localStorage.clear()
+			location.href="./goodsList.html"
+		})
+        $("#accountMenuName").on("click",function(){
+            location.href="./cart.html"
+        })
+    }else{
+		$("#accountMenuName").html("登录")
+		//未登录状态不显示退出按钮
+		$("#exit").remove()
+        $("#accountMenuName").on("click",function(){
+            location.href="./login.html"
+        })
+        
+    }
+var html=''
+var fy=''
+var pagenum=1;
+var zys;
+//显示图片页面
+get(1)
+	//给分页添加点击信息
+	$(".fy").on("click",".num",function(){
+		get($(this).html())
+		pagenum=$(this).html()
+	})
+	//上一页
+	$(".fy").on("click",".prev",function(){
+		if(pagenum>1){
+			get(pagenum-1)
+			pagenum=pagenum-1;
+		}
+	})
+	//下一页
+	$(".fy").on("click",".next",function(){
+		//获取总页数
+		if(pagenum<$(this).parents("div").prev().children("A").html()){
+			get(parseInt(pagenum)+1)	
+			pagenum=pagenum+1;
+		}
+	})
+
+
+	//点击进去详情页面
+	$(".no-gutters").on("click",".image",function(){
+		goodsId=$(this).attr("id")
+		$.ajax({
+			type:"get",
+		url:("http://127.0.0.1:3004/"),
+		data:{goodsId},
+		dataType:"json",
+		success:function(res){
+			if(res.meta.status==200){
+				location.href="./xq.html"
+			}
+		},
+		error(err){
+			console.log(err);		
+		}
+		})
+		
+	})
+
+
+
+	})
+
+
+
+	function  get(pagenum){
+		//显示图片页面
+$.ajax({
+		type:"get",
+		url:("http://127.0.0.1:3003/"),
+		data:{pagenum},
+		dataType:"json",
+		success:function(res){
+			if(res.meta.status==200){
+				var html=''
+				//遍历获取得数组，按照商品id进行遍历
+				$.each(res.data,function(index,item){
+					//通过正则改变路径显示不同的图片
+			var img=item.goods_img.replace(/\.jpg/,'-2.jpg')
+								 html+=`
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12">    
+                            <div class="fl-product shop-grid-view-product">
+                                <div  id ="${item.goods_id}" class="image">
+                                    <a href="javascript:;">
+                                        <img src="${item.goods_img}" class="img-fluid" alt="">
+                                        <img src="${img}" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h2 class="product-title"> <a href="single-product.html">${item.goods_title}</a></h2>
+                                
+                                    <p class="product-price">
+                                        <span class="main-price discounted">$${item.goods_price}</span>
+                                        <span class="discounted-price">$${item.goods_small_price}</span>
+                                    </p>                                
+                                </div>
+                            </div>                          
+						</div>    
+		`	
+				})
+		$(".no-gutters").html(html)	;
+			}else{
+				alert(res.meta.msg)
+			}	
+		},
+		error:function(err){
+			console.log(err);
+			
+		}
+	})
+	//显示分页
+	$.ajax({
+		type:"get",
+		url:("http://127.0.0.1:8000/"),
+		data:{},
+		dataType:"json",
+		success:function(res){
+			if(res.meta.status==200){
+				var fy=''
+				fy=`
+			
+						<div><a class="prev"href="#">prev</a></div>	
+						`
+					var zts=JSON.stringify(res.data[0]).split(':')[1].replace("}","") 
+					zys=Math.ceil(zts/2);
+					for(var i=1;i<=Math.ceil(zts/2);i++){
+
+										fy+=`
+						
+									<div><a class="num" href="javascript:;">${i}</a></div>	
+									`
+					}		
+						fy+=`		
+						<div><a class="next"href="javascript:;">next</a></div>
+					
+				`	
+		$(".fy").html(fy)
+			}else{
+				alert(res.meta.msg)
+			}	
+		},
+		error:function(err){
+			console.log(err);
+			
+		}
+	})
+
+
+	$(".no-gutters").on("click",".image",function(){
+		goodsId=$(this).attr("id")
+		localStorage.setItem('goodsId', goodsId)
+	})
+	$("#search").on("keypress",function(e){
+		//回车键就去查询
+		if(e.which==13){	
+			var name =$("#search").val()
+			$.ajax({
+		type:"get",
+		url:("http://127.0.0.1:9000/"),
+		data:{pagenum,name},
+		dataType:"json",
+		success:function(res){
+			if(res.meta.status==200){
+				var html=''
+				//遍历获取得数组，按照商品id进行遍历
+				$.each(res.data,function(index,item){
+					var title=item.goods_title.replace(`${name}`,`<span class="red">${name}</span>`)
+					//通过正则改变路径显示不同的图片
+			var img=item.goods_img.replace(/\.jpg/,'-2.jpg')
+								 html+=`
+		<div class="col-lg-3 col-md-6 col-sm-6 col-12">    
+                            <div class="fl-product shop-grid-view-product">
+                                <div  id ="${item.goods_id}" class="image">
+                                    <a href="javascript:;">
+                                        <img src="${item.goods_img}" class="img-fluid" alt="">
+                                        <img src="${img}" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h2 class="product-title"> <a href="single-product.html">${title}</a></h2>
+                                
+                                    <p class="product-price">
+                                        <span class="main-price discounted">$${item.goods_price}</span>
+                                        <span class="discounted-price">$${item.goods_small_price}</span>
+                                    </p>                                
+                                </div>
+                            </div>                          
+						</div>    
+		`	
+				})
+		$(".no-gutters").html(html)	;
+			}else{
+				alert(res.meta.msg)
+			}	
+		},
+		error:function(err){
+			console.log(err);
+			
+		}
+	})
+	//显示分页
+	$(".fy").html("")
+
+	}
+	})
+	$("#search").on("blur",function(){
+		location.href="./goodsList.html"
+	})
+
+	}
+
+
+</script>
+</html>

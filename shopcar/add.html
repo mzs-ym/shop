@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加数据</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/common.css">
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <h3 class="wq-title">
+            <div class="single-dropdown">
+                <a href="#" id="changeAccount"><span id="accountMenuName"></span> <span id="exit">退出</span></a>
+
+            </div>
+
+
+            <button type="button" class="btn" data-toggle="modal" data-target=".wq-add">
+
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                添加数据
+            </button>
+
+        </h3>
+
+        <!-- 添加错题部分 -->
+        <div class="modal fade wq-add">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!--细节划分-->
+                    <h4>请填写数据信息:</h4>
+                    <div class="form-group">
+                        <label for="wq-content">商品编号</label>
+                        <input type="text" class="form-control" id="goods_id" name="goods_id" placeholder="商品编号">
+                    </div>
+                    <div class="form-group">
+                        <label for="wq-where">商品图片地址</label>
+                        <textarea id="goods_img" class="form-control" rows="2" name="goods_img"
+                            placeholder="商品图片地址"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">商品标题</label>
+                        <textarea id="goods_title" class="form-control" rows="2" name="goods_title"
+                            placeholder="商品标题"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">商品原价</label>
+                        <textarea id="goods_price" class="form-control" rows="2" name="goods_price"
+                            placeholder="商品原价"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">商品促销价</label>
+                        <textarea id="goods_small_price" class="form-control" rows="2" name="goods_price_small"
+                            placeholder="商品促销价"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">库存</label>
+                        <textarea id="goods_num" class="form-control" rows="2" name="goods_num"
+                            placeholder="库存"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="save-data">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--错题表格-->
+        <div class="row">
+            <table class="table table-bordered table-hover wq-main-table ">
+                <!--错题项目-->
+                <thead>
+                    <tr>
+                        <th class="col-md-1 text-center">商品编号</th>
+                        <th class="col-md-3 text-center">商品图片地址</th>
+                        <th class="col-md-3 text-center">商品标题</th>
+                        <th class="col-md-3 text-center">商品原价</th>
+                        <th class="col-md-1 text-center">商品促销价</th>
+                        <th class="col-md-1 text-center">库存</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr class="text-center middle">
+						<td>1</td>
+						<td>闭包</td>
+						<td>闭包使用不清晰</td>
+						<td>
+							<a 
+								href="#" 
+								data-toggle="popover"
+								data-content="闭包的原理略有模糊现在已经了解,闭包利用了垃圾回收机制，在每个函数执行的时候，都会产生一个活动对象，这个活动对象会在函数执行结束之后删除，但是内存的垃圾回收机制会保留已经储存的数据，该数据可查询，闭包就是利用这个原理对已经删除的数据进行查询" 
+							>闭包的原理略有模糊现在已经了解...
+							</a>
+						</td>
+						<td>
+							<button class="btn">删除</button>
+						</td>
+						<td>
+							<button class="btn">
+								<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+							</button>
+						</td>
+					</tr>
+					<tr class="text-center middle">
+						<td>1</td>
+						<td>闭包</td>
+						<td>闭包使用不清晰</td>
+						<td>
+							<a 
+								href="#" 
+								data-toggle="popover"
+								data-content="闭包的原理略有模糊现在已经了解,闭包利用了垃圾回收机制，在每个函数执行的时候，都会产生一个活动对象，这个活动对象会在函数执行结束之后删除，但是内存的垃圾回收机制会保留已经储存的数据，该数据可查询，闭包就是利用这个原理对已经删除的数据进行查询" 
+							>闭包的原理略有模糊现在已经了解...
+							</a>
+						</td>
+						<td>
+							<button class="btn">删除</button>
+						</td>
+						<td>
+							<button class="btn">
+								<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+							</button>
+						</td>
+					</tr> -->
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="loading">
+        </div>
+
+
+    </div>
+
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/queryUtil.js"></script>
+<script src="./js/addUtil.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+
+
+    var names = localStorage.getItem("ad_name")
+    console.log(name)
+    if (names) {
+        //显示用户名
+        $("#accountMenuName").html(names)
+        //显示退出按键，点击后清除登陆状态
+        $("#exit").on("click", function () {
+            localStorage.clear()
+            location.href = "./admin.html"
+        })
+
+    } else {
+
+        alert("请您登录后再来操作...")
+        location.href = "./admin.html"
+
+    }
+
+
+</script>
+
+</html>
